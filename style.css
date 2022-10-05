@@ -135,8 +135,23 @@ html {
 }
 .menu-link{
     font-family: 'Baloo Da 2', serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color:#555;
+    position: relative;
+}
+.menu-link::before{
+    content:attr(data-content);
+    position: absolute;
+    top:0;
+    left:0;
+    color:#c29525;
+    width:0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width .3s ease-in-out;
+}
+.menu-link:hover::before{
+    width:100%;
 }
 .social-media{
     position: absolute;
@@ -147,7 +162,7 @@ html {
 }
 .social-media i{
     margin:3rem;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     width:4.5rem;
     height:4.5rem;
     color:#fff;
