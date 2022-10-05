@@ -21,13 +21,65 @@ html {
     z-index: 200;
     top:1.5rem;
     right:3rem;
+    transition: right .7s;
 
+}
+.hamburger-menu span{
+    position: absolute;
+    left:5rem;
+    background-color: #e2b646;
+    color:#fff;
+    font-size: 1.6rem;
+    font-family: "Baloo Da 2", serif;
+    letter-spacing: .1rem;
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+
+}
+.change .hamburger-menu:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+.hamburger-menu span::before{
+    content: '';
+    position:absolute;
+    border-right: 1rem solid #e2b646;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-top: 1rem solid transparent;
+    top:50%;
+    left:-2rem;
+    transform: translateY(-50%);
+
+}
+.change .hamburger-menu{
+  right: 26rem;
 }
 .line{
     width:100%;
     height:.2rem;
-    background-color: #fff;
+    background-color: #fff
 }
+.change .line{
+    background-color: #555;
+}
+.change .line-1{
+    transform: rotate(45deg) translate(.3rem,.8rem);
+}
+.change .line-2{
+   visibility: hidden;
+   opacity: 0;
+}
+.change .line-3{
+    transform: rotate(-45deg) translate(.3rem,-.8rem);
+}
+
 .header{
     width:100%;
     height:100vh;
@@ -119,10 +171,14 @@ html {
     width:30rem;
     height: 100vh;
     position:fixed;
-    right: 0;
+    right:-35rem;
     top:0;
     background-color: #fff;
     display: block;
+    transition: right .5s;
+}
+.change .side-bar{
+    right:0;
 }
 .menu{
     position: absolute;
