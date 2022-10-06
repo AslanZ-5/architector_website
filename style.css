@@ -231,6 +231,7 @@ html {
 }
 .social-media i:hover{
     background-color: #c29525;
+    
 }
 .about-us{
     width:100%;
@@ -262,6 +263,33 @@ html {
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(6,6rem);
     row-gap: 4rem;
+}
+.service{
+    width:100%;
+    margin-bottom:2rem;
+}
+.service-header{
+    display: flex;
+    align-items: center;
+}
+.service-header i{
+    font-size:4rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    color:#4b4b4b;
+}
+.service-header h3{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    color:#4b4b4b;
+    font-family: "Baloo Da 2", serif;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.service-text{
+    font-size: 1.6rem;
+    font-family: "Josefin Slab",serif;
+    text-align: justify;
 }
 .service:nth-child(1){
      grid-column: 4 / 7;
