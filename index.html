@@ -144,7 +144,7 @@
                 <div class="underline"></div>
             </div>
             <div class="cards-wrapper">
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="card-img-wrapper">
                         <img src="images/person-1.jpg" alt="CEO">    
                     </div>
@@ -157,7 +157,7 @@
                         <button>Read more</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="card-img-wrapper">
                         <img src="images/person-2.jpg" alt="Designer">    
                     </div>
@@ -170,7 +170,7 @@
                         <button>Read more</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-tilt>
                     <div class="card-img-wrapper">
                         <img src="images/person-3.jpg" alt="Architect">    
                     </div>
@@ -185,7 +185,32 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact-wrapper">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1 class="contact-heading">Contact</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field">
+                            <label  class="input-label">Full name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="field">
+                            <label  class="input-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field"></textarea>
+                            <label class="message">Message</label>
+                        </div>
+                        <input type="submit" class="submit-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./tilt.js"></script>
 </body>
 </html>
