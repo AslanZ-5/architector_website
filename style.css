@@ -129,7 +129,7 @@ html {
 .banner p{
     font-family: 'Josefin Slab', serif;
     font-size: 4rem;
-    color:white;
+    color:#fff;
     width:70%;
     letter-spacing: .1rem;
     margin:3rem;
@@ -540,4 +540,216 @@ html {
 .social-list a > i{
     color: #a7a7a7;
     font-size: 1.7rem;
+}
+
+.scroll-btn{
+    width: 3rem;
+    height:3rem;
+    color:#fff;
+    position: fixed;
+    right:3rem;
+    bottom:5rem;
+    background-color:#e2b646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 0.1 0.6 rgba(0, 0, 0, 0.4);
+}
+@media(max-width:1500px){
+    .about-us-img-wrapper{
+        grid-row:3 / -1;
+    }
+    .card{
+        width:23rem;
+    }
+    .contact-wrapper{
+        width:80%;
+        height:65rem;
+    
+    }
+    .footer-content{
+        width:80%;
+    }
+}
+@media(max-width:1400px){
+    .banner h1{
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+    .banner p{
+        font-size: 3rem;
+    }
+    .banner button{
+        width:22rem;
+        height: 5.5rem;
+        font-size: 1.7rem;
+    }
+    .menu{
+        font-size:1.6rem;
+    }
+    .service:nth-child(1){
+        grid-column: 3 / 7;
+    
+   }
+   .service:nth-child(2){
+        grid-column: 2 / 6;
+    
+   }
+   .service:nth-child(3){
+       grid-column: 3 / 7;
+       
+   }
+   .service:nth-child(4){
+       grid-column: 11 / 15;
+    
+   }
+   .service:nth-child(5){
+       grid-column: 12 / 16;
+    
+   }
+   .service:nth-child(6){
+       grid-column: 11 / 15;
+       
+   }
+    
+}
+@media(max-width:900px){
+    .team{
+        padding:5rem;
+    }
+    .cards-wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem; 
+    }
+    .card{
+        margin-bottom: 8rem;
+    }
+    .contact-wrapper{
+        width: 90%;
+        height: 55rem;
+    }
+    .contact-heading{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .field{
+        width: 39rem;
+        margin:2rem 0;
+        padding: .7rem .7rem .7rem 0;
+        font-size: 1.2rem;
+    }
+    .input-label{
+        bottom:3rem;
+    }
+    .message{
+        bottom:3.6rem;
+    }
+    
+    .submit-btn{
+        width:39rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+        
+    }
+}
+
+@media(max-width:700px){
+    .banner h1{
+        font-size:5rem;
+        line-height: 4rem;
+    }
+    .banner p{
+        font-size: 3rem;
+        margin:3rem;
+
+    
+    }
+    
+    .banner button {
+        width:17rem;
+        height:4.7rem;
+        font-size: 1.6rem;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        width:40rem;
+        margin-bottom: 4rem;
+    }
+    .about-us-img-wrapper{
+        width:40rem;
+    }
+    .img-wrapper img{
+        width:100%;
+    }
+    .contact-left{
+        width:0;
+    }
+    .contact-right{
+        width:100%;
+    }
+    .contact-heading{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    .field{
+        width: 45rem;
+        margin:3rem 0;
+        padding: 1rem 1rem 1rem 0;
+        font-size: 1.6rem;
+    }
+    .input-label{
+        bottom:5rem;
+    }
+    .message{
+        bottom:5rem;
+    }
+    
+    .submit-btn{
+        width:45rem;
+        height: 6rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem; 
+    }
+    .footer{
+        height:12rem;
+    }
+    .footer-content{
+        width: 75%;
+  
+    }
+    .footer-content > p{
+        font-size: 1.2rem;
+    }
+    .social-list a{
+        margin: 0 1rem;
+    }
+    
+    .scroll-btn{
+        width: 3.5rem;
+        height:3.5rem;
+        font-size: 2rem;
+    }
+
+
+}
+@media(max-width:500px){
+    html{
+        font-size: 45%;
+    }
+    .side-bar{
+        width:100%;
+        right:-100%;
+    }
+    .change .hamburger-menu{
+        left: 2rem;
+    }
 }
