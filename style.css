@@ -783,6 +783,28 @@ html {
     background-color:transparent;  
     display: flex;
     position: relative;
+    opacity: 0;
+    visibility: hidden;
+    animation:displayCircles 4s;
+}
+@keyframes displayCircles {
+    0%{
+        opacity:0;
+        visibility: hidden;
+    }
+    25%{
+        opacity:1;
+        visibility: visible;
+    }
+    90%{
+        opacity:1;
+        visibility: visible;
+    }
+    100%{
+        opacity:1;
+        visibility: visible;
+    }
+    
 }
 .circles div{
     animation: circles 1.2s cubic-bezier(.5,0,.5,1) infinite;
